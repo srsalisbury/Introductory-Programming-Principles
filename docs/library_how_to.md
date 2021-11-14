@@ -11,7 +11,7 @@
 1. Make a new file in the "exercises" folder, and name your file what you want to call the project
 2. Type the following lines into your file:
 
-```
+```java
 package exercises;
 
 import ipp.SnapApp;

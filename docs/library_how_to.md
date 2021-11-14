@@ -1,6 +1,6 @@
 # How to Set Up Java Library
 
-1. Download and install Git on your computer from [here](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
+1. Download and install Git on your computer from [here](https://git-scm.com/downloads)
 2. Download and install Gradle on your computer from [here](https://gradle.org/install/)
 3. Use the Github Desktop to clone the contents of the "code" folder into your desired location on your computer
 4. Open a terminal window and navigate to the location you just extracted the code into

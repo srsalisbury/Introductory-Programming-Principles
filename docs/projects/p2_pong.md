@@ -1,9 +1,9 @@
 # Project 2: Pong
 
-### Objective
+## Objective
 In this project you will learn to use conditionals and build a basic game with the skills learned so far. The techniques and concepts involved in this project are used in all games from here on out, and can and will be applied to future coding projects.
 
-### Description
+## Description
 In this assignment you will be coding up the video game Pong. Pong is one of the earliest arcade video games created by Atari. It is based on table tennis featuring simple two-dimensional graphics. Your final game will need to have two “paddles” that users control to move up and down trying to block/hit the “ball” back and forth. A player scores when the opposing player misses the ball and it goes off the screen. The ball must travel in straight lines bouncing off of the top and bottom of the screen and off of the paddles. You should keep score for each player and display that score and code up an end/winning case. 
 
 ### Assignments

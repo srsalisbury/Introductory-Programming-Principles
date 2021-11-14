@@ -25,6 +25,7 @@ In breakout, you have to use a paddle at the bottom of the screen to bounce a ba
    1. Put objects that the ball bounces off of and destroys on the playing field
    1. Add lives to set when the game is won or lost 
    1. Put a realistic bounce function for the ball off the paddle (ball exits at opposite angle of entry)
+
 ### Bonus Assignment
 1. Bonus Breakout
    1. Choose one or more of the following:

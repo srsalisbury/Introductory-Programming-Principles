@@ -44,6 +44,7 @@ In this assignment you will be coding up various polygon drawing functions, gene
 
 ### The Math
 Regular polygons are polygons whose sides are all the same length and whose angles between sides are all the same size.
+
 <img src="images/p3_triangle.png" alt="Triangle" width="200"/>
 <img src="images/p3_square.png" alt="Square" width="180"/>
 <img src="images/p3_pentagon.png" alt="Pentagon" width="220"/>

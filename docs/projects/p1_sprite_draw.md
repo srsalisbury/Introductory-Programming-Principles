@@ -1,6 +1,6 @@
 # Project 1: SpriteDraw
 
-### Objective
+## Objective
 In this project you will become familiar with the Snap! Programming environment while learning how to create Sprites (the objects that Snap! users add code to create programs) and then manipulate those sprites and use them to draw on the stage (screen/program area).
 
 ### Assignments

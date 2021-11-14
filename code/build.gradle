@@ -5,6 +5,7 @@ buildscript {
 plugins {
 	id 'java'
 	id 'com.github.sherter.google-java-format' version '0.8'
+	id 'org.openjfx.javafxplugin' version '0.0.10'
 }
 
 repositories {
@@ -18,6 +19,11 @@ dependencies {
 	testImplementation 'com.google.guava:guava-testlib:30.1.1-jre'
 	testImplementation 'com.google.truth:truth:0.44'
 	testImplementation 'junit:junit:4.12'
+}
+
+javafx {
+	version = "17"
+	modules = [ 'javafx.controls' ]
 }
 
 task exercise(type:JavaExec) {

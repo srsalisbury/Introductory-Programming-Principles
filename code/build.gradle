@@ -1,0 +1,51 @@
+buildscript {
+	repositories.mavenLocal()
+}
+
+plugins {
+	id 'java'
+	id 'com.github.sherter.google-java-format' version '0.8'
+}
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	annotationProcessor 'com.google.auto.value:auto-value:1.6.2'
+	compileOnly 'com.google.auto.value:auto-value-annotations:1.6.2'
+	implementation 'com.google.guava:guava:30.1.1-jre'
+	testImplementation 'com.google.guava:guava-testlib:30.1.1-jre'
+	testImplementation 'com.google.truth:truth:0.44'
+	testImplementation 'junit:junit:4.12'
+}
+
+task exercise(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.Exercise'
+}
+
+task pong(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.Pong'
+}
+
+task breakout(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.Breakout'
+}
+
+task jetpack(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.JetpackRun'
+}
+
+task recursion(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.Recursion'
+}
+
+task sort(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.Sort'
+}

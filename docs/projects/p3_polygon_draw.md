@@ -35,3 +35,39 @@ In this assignment you will be coding up various polygon drawing functions, gene
    1. Start with odd # of vertices and then work on evens if you finish
 1. Idea #2) Make a spiral draw block that can draw a spiral of any beginning and end radius
    1. Use parameters to control the values that the program uses that can draw a spiral 
+
+### Deep Star
+![Deep Star](images/p3_deep_star.png)
+
+### Shallow Star
+![Shallow Star](images/p3_shallow_star.png)
+
+### The Math
+Regular polygons are polygons whose sides are all the same length and whose angles between sides are all the same size.
+<img src="images/p3_triangle.png" alt="Triangle" width="200"/>
+<img src="images/p3_square.png" alt="Square" width="180"/>
+<img src="images/p3_pentagon.png" alt="Pentagon" width="220"/>
+<img src="images/p3_hexagon.png" alt="Hexagon" width="200"/>
+
+* **The sum of exterior angles of a regular polygon is 360&deg;, so it follows that the measure of the exterior angle of an n-sided regular polygon is**
+
+![foo](https://render.githubusercontent.com/render/math?math=\Large%20\frac{360^\circ}{n})
+
+* **The measure of the interior angle of a regular polygon is** 
+
+![foo](https://render.githubusercontent.com/render/math?math=180^\circ-)measure of exterior angle
+
+<img src="images/p3_angle_names.png" alt="Hexagon" width="200"/>
+
+* **Therefore**
+
+Interior angle = ![foo](https://render.githubusercontent.com/render/math?math=180^\circ-)measure of exterior angle
+
+Exterior angle = ![foo](https://render.githubusercontent.com/render/math?math=\Large%20\frac{360^\circ}{n})
+
+* **Using substitution**
+
+Interior angle = ![foo](https://render.githubusercontent.com/render/math?math=180^\circ-\Large%20\frac{360^\circ}{n})
+               = ![foo](https://render.githubusercontent.com/render/math?math=\Large\frac{n*180^\circ}{n}-\frac{360^\circ}{n})
+               = ![foo](https://render.githubusercontent.com/render/math?math=\Large\frac{n*180^\circ-360^\circ}{n})
+               = ![foo](https://render.githubusercontent.com/render/math?math=180^\circ*\Large\frac{n-2}{n})

@@ -7,7 +7,8 @@ In this project we will be learning about cloning, its uses and advantages, and 
 In this assignment you will be required to make a program similar to pong, but use clones to create multiple objects that must be destroyed. The overall theme will be up to the student.
 
 ## Breakout
-In breakout, you have to use a paddle at the bottom of the screen to bounce a ball into some obstacles on the screen and destroy them until none are left on screen, then the game puts more objects on the screen for the next level. The paddle is moved by the left and right arrows, and stays on the screen no matter what. The objects on the screen can be any shape and disappear when hit with the ball. The ball bounces off of the paddle, the walls, and the objects on the screen, but removes a life every time it hits the bottom of the screen. You win if all objects are destroyed before losing all your lives. 
+In breakout, you have to use a paddle at the bottom of the screen to bounce a ball into some obstacles on the screen and destroy them until none are left on screen, then the game puts more objects on the screen for the next level. The paddle is moved by the left and right arrows, and stays on the screen no matter what. The objects on the screen can be any shape and disappear when hit with the ball. The ball bounces off of the paddle, the walls, and the objects on the screen, but removes a life every time it hits the bottom of the screen. You win if all objects are destroyed before losing all your lives.
+
 ![Breakout Example](images/p4_breakout_image.png)
 
 ### Assignments

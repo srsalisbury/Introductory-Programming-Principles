@@ -21,6 +21,7 @@ In this project you will have to choose to make either a fractal drawing functio
       1. Must utilize recursion
          1. Calls itself within the function
          1. Has an end case
+
 ### Bonus Assignments
 1. Fractal Function
    1. Choose any other fractal than a Koch Snowflake

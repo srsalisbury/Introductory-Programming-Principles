@@ -16,7 +16,7 @@ package exercises;
 import ipp.SnapApp;
 import ipp.Sprite;
 
-public class [name of file] extends SnapApp {
+public class [name of class] extends SnapApp {
   
   @Override
   public void start() {
@@ -30,7 +30,7 @@ public class [name of file] extends SnapApp {
 ```
 task [name of project](type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.[name of project file]'
+  main = 'exercises.[name of project class]'
 }
 ```
 6. Finally, to run the code, go into your terminal window, make sure you're in the folder you extracted the code into, and type "gradle [name of project]" into the command line and hit Enter

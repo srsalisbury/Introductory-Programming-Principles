@@ -17,7 +17,7 @@ package exercises;
 import ipp.SnapApp;
 import ipp.Sprite;
 
-public class [name of class] extends SnapApp {
+public class NameOfClass extends SnapApp {
   
   @Override
   public void start() {
@@ -33,7 +33,7 @@ public class [name of class] extends SnapApp {
 ```
 task [name of project](type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.[name of project class]'
+  main = 'exercises.NameOfClass'
 }
 ```
 

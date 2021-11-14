@@ -2,7 +2,7 @@
 
 1. Download and install Git on your computer from [this link](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
 2. Download and install Gradle on your computer from [this link](https://gradle.org/install/)
-3. Use the Github Desktop to clone the contents of the "code" folder into your desire location on your computer
+3. Use the Github Desktop to clone the contents of the "code" folder into your desired location on your computer
 4. Open a terminal window and navigate to the location you just extracted the code into
 5. Type "gradle build" into the command line and hit Enter
 

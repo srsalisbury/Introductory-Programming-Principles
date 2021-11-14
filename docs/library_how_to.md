@@ -1,4 +1,4 @@
-# How to Setup Java Library
+# How to Set Up Java Library
 
 1. Download and install Git on your computer from [here](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
 2. Download and install Gradle on your computer from [here](https://gradle.org/install/)

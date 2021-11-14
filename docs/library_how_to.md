@@ -30,11 +30,11 @@ public class NameOfClass extends SnapApp {
 4. To run your code, go to the file titled "build.gradle" and open it up
 5. At the bottom, type the following code:
 
-```
-task [name of project](type:JavaExec) {
+```gradle
+task NameOfProject(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
   main = 'exercises.NameOfClass'
 }
 ```
 
-6. Finally, to run the code, go into your terminal window, make sure you're in the folder you extracted the code into, and type "gradle [name of project]" into the command line and hit Enter
+6. Finally, to run the code, go into your terminal window, make sure you're in the folder you extracted the code into, and type "gradle NameOfProject" into the command line and hit Enter

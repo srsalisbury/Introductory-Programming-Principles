@@ -28,6 +28,7 @@ In this assignment you will be coding up various polygon drawing functions, gene
    1. Write a control structure (when green flag clicked) that uses the drawShape block to draw seven different shapes in different places.
 1. Use your blocks to do something cool/fun 
    1. This is where you get to be creative. Do something using your shape command block(s) that will make me go “WOW!” You might want to think about rotating the shapes as you draw them. You can create a program that creates a static end product or one that creates a dynamic “show.” Be Creative.
+
 ### Bonus Assignments
 1. Create more command drawing blocks -- eg: draw star, draw spiral
 1. Idea #1) Make a draw star block, one that draws a star with the given number of vertices

@@ -13,20 +13,20 @@ In breakout, you have to use a paddle at the bottom of the screen to bounce a ba
 
 ### Assignments
 1. Destroy Targets 
-   1. Create 12 target sprites that are the same (StudentName_Cloning_stage1.xml)
+   1. Create 12 target sprites that are the same
       1. Make it so that when the mouse pointer touches a sprite it is hidden 
       1. Instead of hiding the sprites make the sprites change colors when the mouse pointer touches them.  
-   1. Use clones instead of multiple sprites in order to create the multiple targets (StudentName_Cloning_stage2.xml)
+   1. Use clones instead of multiple sprites in order to create the multiple targets
       1. Hide the clones
       1. Change clone colors
       1. Change some other aspect of the clones (shape, size, make them wiggle, etc)  
-1. Create Basic Breakout  (StudentName_Breakout_stage1.xml)
+1. Create Basic Breakout
    1. Have a paddle at the bottom of the screen that bounces a ball off of it and all of the other walls.
    1. Put objects that the ball bounces off of and destroys on the playing field
    1. Add lives to set when the game is won or lost 
    1. Put a realistic bounce function for the ball off the paddle (ball exits at opposite angle of entry)
 ### Bonus Assignment
-1. Bonus Breakout (StudentName_Breakout_bonus.xml)
+1. Bonus Breakout
    1. Choose one or more of the following:
       1. Add levels and score to the game
       1. Give the game a theme

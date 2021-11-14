@@ -2,9 +2,12 @@
 
 1. Download and install Git on your computer from [here](https://git-scm.com/downloads)
 2. Download and install Gradle on your computer from [here](https://gradle.org/install/)
-3. Use the Github Desktop to clone the contents of the "code" folder into your desired location on your computer
-4. Open a terminal window and navigate to the location you just extracted the code into
-5. Type "gradle build" into the command line and hit Enter
+3. Use Git to clone the contents of the "code" folder into your desired location on your computer
+   1. Decide where you want to put the code
+   2. Create the directory and cd into it
+   3. Run `git clone https://github.com/srsalisbury/Introductory-Programming-Principles.git`
+4. Run `cd Introductory-Programming-Principles/code`
+5. Run `gradle build`
 
 # How to use Java Library
 

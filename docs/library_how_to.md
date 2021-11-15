@@ -9,7 +9,51 @@
 4. Run `cd Introductory-Programming-Principles/code`
 5. Run `gradle build`
 
+# How to start a project
+
+1. Make a new file in the "exercises" folder, and name your file what you want to call the project
+2. Type the following lines into your file:
+
+```java
+package exercises;
+
+import ipp.SnapApp;
+import ipp.Sprite;
+
+public class NameOfClass extends SnapApp {
+  
+  @Override
+  public void start() {
+  
+  }
+}
+```
+
+3. Write your desired code within the "start" function. You can add any more functions you want, just maks sure that they are outside of the start function
+
 # How to use Java Library
+
+* Within the "start" method, you can write your program
+* First, initialize a Sprite using the command:
+
+```java
+Sprite spriteName = addSprite("spriteName");
+```
+
+* Then, for each sprite, you need to initialize a thread
+* To do this, write:
+
+```java
+addThread(() -> {
+// put your commands in here
+});
+```
+
+* To call a command on a sprite, write:
+
+```java
+spriteName.method(inputs);
+```
 
 * Sprite Methods
   * moveTo(Location loc)
@@ -35,53 +79,11 @@
   * getPenColor()
   * getPenSize()
   * getImage()
-* How to use the commands
-  * First, initialize a Sprite using the command:
-
-```java
-Sprite spriteName = addSprite("spriteName");
-```
-
-  * For each sprite, you need to initialize a thread
-  * To do this, write:
-
-```java
-addThread(() -> {
-// put your commands in here
-});
-```
-
-  * To call a command on a sprite, write:
-
-```java
-spriteName.method(inputs);
-```
-
-  * Run your project from the command line
 
 # How to run projects
 
-1. Make a new file in the "exercises" folder, and name your file what you want to call the project
-2. Type the following lines into your file:
-
-```java
-package exercises;
-
-import ipp.SnapApp;
-import ipp.Sprite;
-
-public class NameOfClass extends SnapApp {
-  
-  @Override
-  public void start() {
-  
-  }
-}
-```
-
-3. Write your desired code within the "start" function. You can add any more functions you want, just maks sure that they are outside of the start function
-4. To run your code, go to the file titled "build.gradle" and open it up
-5. At the bottom, type the following code:
+1. To run your code, go to the file titled "build.gradle" and open it up
+2. At the bottom, type the following code:
 
 ```gradle
 task NameOfProject(type:JavaExec) {
@@ -90,4 +92,4 @@ task NameOfProject(type:JavaExec) {
 }
 ```
 
-6. Finally, to run the code, go into your terminal window, make sure you're in the folder you extracted the code into, and type "gradle NameOfProject" into the command line and hit Enter
+3. Finally, to run the code, go into your terminal window, make sure you're in the folder you extracted the code into, and type "gradle NameOfProject" into the command line and hit Enter

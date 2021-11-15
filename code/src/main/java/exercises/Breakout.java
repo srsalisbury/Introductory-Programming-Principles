@@ -12,8 +12,8 @@ public class Breakout extends SnapApp {
   @Override
   public void start() {
     Sprite player =
-        addSprite("player1", "C:\\Users\\steve\\Desktop\\Desktop\\Breakout_Bar.png", 10.0, 40.0);
-    Sprite ball = addSprite("ball", "C:\\Users\\steve\\Desktop\\Desktop\\Ball.png", 10.0, 10.0);
+        addSprite("player1", "images/Breakout_Bar.png", 10.0, 40.0);
+    Sprite ball = addSprite("ball", "images/Ball.png", 10.0, 10.0);
     // int p1score = 0;
     // int p2score = 0;
     Sprite[] paddles = {player};
@@ -81,42 +81,42 @@ public class Breakout extends SnapApp {
           target =
               addSprite(
                   ("target" + row * 10 + col),
-                  "C:\\Users\\steve\\Desktop\\Desktop\\Breakout_Target_Blue.png",
+                  "images/Breakout_Target_Blue.png",
                   20.0,
                   54.5);
         } else if (row == 1) {
           target =
               addSprite(
                   ("target" + row * 10 + col),
-                  "C:\\Users\\steve\\Desktop\\Desktop\\Breakout_Target_LightBlue.png",
+                  "images/Breakout_Target_LightBlue.png",
                   20.0,
                   54.5);
         } else if (row == 2) {
           target =
               addSprite(
                   ("target" + row * 10 + col),
-                  "C:\\Users\\steve\\Desktop\\Desktop\\Breakout_Target_Green.png",
+                  "images/Breakout_Target_Green.png",
                   20.0,
                   54.5);
         } else if (row == 3) {
           target =
               addSprite(
                   ("target" + row * 10 + col),
-                  "C:\\Users\\steve\\Desktop\\Desktop\\Breakout_Target_Yellow.png",
+                  "images/Breakout_Target_Yellow.png",
                   20.0,
                   54.5);
         } else if (row == 4) {
           target =
               addSprite(
                   ("target" + row * 10 + col),
-                  "C:\\Users\\steve\\Desktop\\Desktop\\Breakout_Target_Orange.png",
+                  "images/Breakout_Target_Orange.png",
                   20.0,
                   54.5);
         } else {
           target =
               addSprite(
                   ("target" + row * 10 + col),
-                  "C:\\Users\\steve\\Desktop\\Desktop\\Breakout_Target_Red.png",
+                  "images/Breakout_Target_Red.png",
                   20.0,
                   54.5);
         }

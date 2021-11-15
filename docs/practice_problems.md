@@ -60,7 +60,7 @@
   * Pow
   * Factorial
 * Binary Search
-  * Binary search utilizes a sorted list to find values much faster than polling each individual entry. This is basically a higher-or-lower method of finding elements in a list.
+  * Binary search utilizes a sorted list to find values much faster than polling each individual entry. This is basically a higher-or-lower method of finding elements in a list. A computer guesses in the middle of the range of possible values, and then based on whether the element it is looking for is higher or lower than its guess, it cuts its search range in half. It then repeats the process until it finds the element it is looking for.
 
 ## Unit 7: Data Structures
 * Array enter and access functions

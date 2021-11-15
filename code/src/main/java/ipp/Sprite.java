@@ -5,9 +5,9 @@ import javafx.scene.image.Image;
 
 public interface Sprite {
 
-  static Sprite makeDefaultSprite(String name, Animator animator) throws FileNotFoundException {
+  static Sprite makeDefaultSprite(String name, Animator animator) throws IllegalArgumentException {
     return new TestSprite(
-        name, animator, "C:\\Users\\steve\\Desktop\\Desktop\\Test_Cursor.png", 20.0, 20.0);
+        name, animator, "images/Test_Cursor.png", 20.0, 20.0);
   }
 
   String name();

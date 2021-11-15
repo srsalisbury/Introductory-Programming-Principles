@@ -36,7 +36,7 @@ public abstract class SnapApp extends Application {
       Sprite sprite = Sprite.makeDefaultSprite(name, animator);
       screen.addSprite(sprite);
       return sprite;
-    } catch (FileNotFoundException e) {
+    } catch (IllegalArgumentException e) {
       System.out.println(e);
       Platform.exit();
       return null;
@@ -48,7 +48,7 @@ public abstract class SnapApp extends Application {
       Sprite sprite = new TestSprite(name, animator, filepath, height, width);
       screen.addSprite(sprite);
       return sprite;
-    } catch (FileNotFoundException e) {
+    } catch (IllegalArgumentException e) {
       System.out.println(e);
       Platform.exit();
       return null;

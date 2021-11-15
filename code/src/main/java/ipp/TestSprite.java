@@ -2,6 +2,7 @@ package ipp;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
@@ -19,11 +20,11 @@ public class TestSprite implements Sprite {
   private double penSize;
   private List<Listener> listeners;
   private Animator animator;
-  private String imagePath;
+  private String resourcePath;
   private Image image;
 
-  public TestSprite(String name, Animator animator, String filePath, double height, double width)
-      throws FileNotFoundException {
+  public TestSprite(String name, Animator animator, String resourcePath, double height, double width)
+      throws IllegalArgumentException {
     this.name = name;
     location = Location.create(0.0, 0.0);
     direction = 0.0;
@@ -32,10 +33,7 @@ public class TestSprite implements Sprite {
     penSize = 1.0;
     listeners = new ArrayList<>();
     this.animator = animator;
-    image = new Image(new FileInputStream(filePath));
-    imagePath = filePath;
-    hbHeight = height;
-    hbWidth = width;
+    setImage(resourcePath, height, width);
   }
 
   @Override
@@ -145,16 +143,18 @@ public class TestSprite implements Sprite {
   }
 
   @Override
-  public void setImage(String path, double height, double width) {
-    if (path == imagePath) {
+  public void setImage(String path, double height, double width) throws IllegalArgumentException {
+    if (path == resourcePath) {
       return;
     }
-    try {
-      image = new Image(new FileInputStream(path));
-      imagePath = path;
-    } catch (FileNotFoundException e) {
-      System.err.println("Invalid path given");
+    InputStream inputStream = getClass().getClassLoader().getResourceAsStream(path);
+    if (inputStream == null) {
+      throw new IllegalArgumentException("Invalid path given: " + path);
     }
+    image = new Image(inputStream);
+    resourcePath = path;
+    hbHeight = height;
+    hbWidth = width;
     for (Listener listener : listeners) {
       listener.changedImage(image, height, width);
     }

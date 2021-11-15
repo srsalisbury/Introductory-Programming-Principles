@@ -42,8 +42,8 @@ public class JetpackRun extends SnapApp {
         addSprite("topWall", "C:\\Users\\steve\\Desktop\\Desktop\\JetpackWall.png", 600.0, 60.0);
     Sprite bottomWall =
         addSprite("bottomWall", "C:\\Users\\steve\\Desktop\\Desktop\\JetpackWall.png", 600.0, 60.0);
-    topWall.moveTo(330.0, (height + ((gap + topWall.getHBHeight()) / 2)));
-    bottomWall.moveTo(330.0, (height - ((gap + bottomWall.getHBHeight()) / 2)));
+    topWall.moveTo(330.0, (height + ((gap + topWall.getHitBoxHeight()) / 2)));
+    bottomWall.moveTo(330.0, (height - ((gap + bottomWall.getHitBoxHeight()) / 2)));
     while (true) {
       if (topWall.isTouching(jetpack) || bottomWall.isTouching(jetpack)) {
         return true;

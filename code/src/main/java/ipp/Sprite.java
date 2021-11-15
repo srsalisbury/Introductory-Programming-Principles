@@ -54,9 +54,9 @@ public interface Sprite {
 
   double getDirection();
 
-  double getHBHeight();
+  double getHitBoxHeight();
 
-  double getHBWidth();
+  double getHitBoxWidth();
 
   boolean isPenDown();
 

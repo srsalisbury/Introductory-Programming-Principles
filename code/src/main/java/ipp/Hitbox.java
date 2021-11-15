@@ -18,67 +18,67 @@ public class Hitbox {
     Location sprite1UR =
         Location.create(
             sprite1X
-                + (sprite1.getHBWidth() / 2) * Math.cos(sprite1Rot)
-                + (sprite1.getHBHeight() / 2) * Math.sin(sprite1Rot),
+                + (sprite1.getHitBoxWidth() / 2) * Math.cos(sprite1Rot)
+                + (sprite1.getHitBoxHeight() / 2) * Math.sin(sprite1Rot),
             sprite1Y
-                + (sprite1.getHBWidth() / 2) * Math.sin(sprite1Rot)
-                + (sprite1.getHBHeight() / 2) * Math.cos(sprite1Rot));
+                + (sprite1.getHitBoxWidth() / 2) * Math.sin(sprite1Rot)
+                + (sprite1.getHitBoxHeight() / 2) * Math.cos(sprite1Rot));
     Location sprite1UL =
         Location.create(
             sprite1X
-                - (sprite1.getHBWidth() / 2) * Math.cos(sprite1Rot)
-                + (sprite1.getHBHeight() / 2) * Math.sin(sprite1Rot),
+                - (sprite1.getHitBoxWidth() / 2) * Math.cos(sprite1Rot)
+                + (sprite1.getHitBoxHeight() / 2) * Math.sin(sprite1Rot),
             sprite1Y
-                - (sprite1.getHBWidth() / 2) * Math.sin(sprite1Rot)
-                + (sprite1.getHBHeight() / 2) * Math.cos(sprite1Rot));
+                - (sprite1.getHitBoxWidth() / 2) * Math.sin(sprite1Rot)
+                + (sprite1.getHitBoxHeight() / 2) * Math.cos(sprite1Rot));
     Location sprite1DR =
         Location.create(
             sprite1X
-                + (sprite1.getHBWidth() / 2) * Math.cos(sprite1Rot)
-                - (sprite1.getHBHeight() / 2) * Math.sin(sprite1Rot),
+                + (sprite1.getHitBoxWidth() / 2) * Math.cos(sprite1Rot)
+                - (sprite1.getHitBoxHeight() / 2) * Math.sin(sprite1Rot),
             sprite1Y
-                + (sprite1.getHBWidth() / 2) * Math.sin(sprite1Rot)
-                - (sprite1.getHBHeight() / 2) * Math.cos(sprite1Rot));
+                + (sprite1.getHitBoxWidth() / 2) * Math.sin(sprite1Rot)
+                - (sprite1.getHitBoxHeight() / 2) * Math.cos(sprite1Rot));
     Location sprite1DL =
         Location.create(
             sprite1X
-                - (sprite1.getHBWidth() / 2) * Math.cos(sprite1Rot)
-                - (sprite1.getHBHeight() / 2) * Math.sin(sprite1Rot),
+                - (sprite1.getHitBoxWidth() / 2) * Math.cos(sprite1Rot)
+                - (sprite1.getHitBoxHeight() / 2) * Math.sin(sprite1Rot),
             sprite1Y
-                - (sprite1.getHBWidth() / 2) * Math.sin(sprite1Rot)
-                - (sprite1.getHBHeight() / 2) * Math.cos(sprite1Rot));
+                - (sprite1.getHitBoxWidth() / 2) * Math.sin(sprite1Rot)
+                - (sprite1.getHitBoxHeight() / 2) * Math.cos(sprite1Rot));
     Location sprite2UR =
         Location.create(
             sprite2X
-                + (sprite2.getHBWidth() / 2) * Math.cos(sprite2Rot)
-                + (sprite2.getHBHeight() / 2) * Math.sin(sprite2Rot),
+                + (sprite2.getHitBoxWidth() / 2) * Math.cos(sprite2Rot)
+                + (sprite2.getHitBoxHeight() / 2) * Math.sin(sprite2Rot),
             sprite2Y
-                + (sprite2.getHBWidth() / 2) * Math.sin(sprite2Rot)
-                + (sprite2.getHBHeight() / 2) * Math.cos(sprite2Rot));
+                + (sprite2.getHitBoxWidth() / 2) * Math.sin(sprite2Rot)
+                + (sprite2.getHitBoxHeight() / 2) * Math.cos(sprite2Rot));
     Location sprite2UL =
         Location.create(
             sprite2X
-                - (sprite2.getHBWidth() / 2) * Math.cos(sprite2Rot)
-                + (sprite2.getHBHeight() / 2) * Math.sin(sprite2Rot),
+                - (sprite2.getHitBoxWidth() / 2) * Math.cos(sprite2Rot)
+                + (sprite2.getHitBoxHeight() / 2) * Math.sin(sprite2Rot),
             sprite2Y
-                - (sprite2.getHBWidth() / 2) * Math.sin(sprite2Rot)
-                + (sprite2.getHBHeight() / 2) * Math.cos(sprite2Rot));
+                - (sprite2.getHitBoxWidth() / 2) * Math.sin(sprite2Rot)
+                + (sprite2.getHitBoxHeight() / 2) * Math.cos(sprite2Rot));
     Location sprite2DR =
         Location.create(
             sprite2X
-                + (sprite2.getHBWidth() / 2) * Math.cos(sprite2Rot)
-                - (sprite2.getHBHeight() / 2) * Math.sin(sprite2Rot),
+                + (sprite2.getHitBoxWidth() / 2) * Math.cos(sprite2Rot)
+                - (sprite2.getHitBoxHeight() / 2) * Math.sin(sprite2Rot),
             sprite2Y
-                + (sprite2.getHBWidth() / 2) * Math.sin(sprite2Rot)
-                - (sprite2.getHBHeight() / 2) * Math.cos(sprite2Rot));
+                + (sprite2.getHitBoxWidth() / 2) * Math.sin(sprite2Rot)
+                - (sprite2.getHitBoxHeight() / 2) * Math.cos(sprite2Rot));
     Location sprite2DL =
         Location.create(
             sprite2X
-                - (sprite2.getHBWidth() / 2) * Math.cos(sprite2Rot)
-                - (sprite2.getHBHeight() / 2) * Math.sin(sprite2Rot),
+                - (sprite2.getHitBoxWidth() / 2) * Math.cos(sprite2Rot)
+                - (sprite2.getHitBoxHeight() / 2) * Math.sin(sprite2Rot),
             sprite2Y
-                - (sprite2.getHBWidth() / 2) * Math.sin(sprite2Rot)
-                - (sprite2.getHBHeight() / 2) * Math.cos(sprite2Rot));
+                - (sprite2.getHitBoxWidth() / 2) * Math.sin(sprite2Rot)
+                - (sprite2.getHitBoxHeight() / 2) * Math.cos(sprite2Rot));
     return (isPointWithin(sprite1UL, sprite1UR, sprite1DL, sprite1DR, sprite2UL)
         || isPointWithin(sprite1UL, sprite1UR, sprite1DL, sprite1DR, sprite2UR)
         || isPointWithin(sprite1UL, sprite1UR, sprite1DL, sprite1DR, sprite2DL)
@@ -93,18 +93,18 @@ public class Hitbox {
     double radius1 =
         distBetween(
             Location.create(0.0, 0.0),
-            Location.create(sprite1.getHBWidth(), sprite1.getHBHeight()));
+            Location.create(sprite1.getHitBoxWidth(), sprite1.getHitBoxHeight()));
     double radius2 =
         distBetween(
             Location.create(0.0, 0.0),
-            Location.create(sprite2.getHBWidth(), sprite2.getHBHeight()));
+            Location.create(sprite2.getHitBoxWidth(), sprite2.getHitBoxHeight()));
     double distance = distBetween(sprite1.getLocation(), sprite2.getLocation());
     return ((radius1 + radius2) < distance);
   }
 
   private static boolean tooClose(Sprite sprite1, Sprite sprite2) {
-    double radius1 = Math.min(sprite1.getHBHeight(), sprite1.getHBWidth()) / 2;
-    double radius2 = Math.min(sprite2.getHBHeight(), sprite2.getHBWidth()) / 2;
+    double radius1 = Math.min(sprite1.getHitBoxHeight(), sprite1.getHitBoxWidth()) / 2;
+    double radius2 = Math.min(sprite2.getHitBoxHeight(), sprite2.getHitBoxWidth()) / 2;
     double distance = distBetween(sprite1.getLocation(), sprite2.getLocation());
     return ((radius1 + radius2) >= distance);
   }

@@ -197,12 +197,12 @@ public class TestSprite implements Sprite {
   }
 
   @Override
-  public double getHBHeight() {
+  public double getHitBoxHeight() {
     return hbHeight;
   }
 
   @Override
-  public double getHBWidth() {
+  public double getHitBoxWidth() {
     return hbWidth;
   }
 

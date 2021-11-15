@@ -85,8 +85,8 @@ public class Screen {
 
     private ImageView initImage(Sprite sprite) {
       ImageView iV = new ImageView(sprite.getImage());
-      iV.setFitHeight(sprite.getHBHeight());
-      iV.setFitWidth(sprite.getHBWidth());
+      iV.setFitHeight(sprite.getHitBoxHeight());
+      iV.setFitWidth(sprite.getHitBoxWidth());
       iV.setX(sprite.getLocation().x() - iV.getFitWidth() / 2);
       iV.setY(sprite.getLocation().y() - iV.getFitHeight() / 2);
       iV.setRotate(sprite.getDirection());

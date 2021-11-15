@@ -29,7 +29,7 @@ public class Sort extends SnapApp {
         });
   }
 
-  public List generateScramble(int len) {
+  public List<Integer> generateScramble(int len) {
     List<Integer> scrambleList = new ArrayList<Integer>();
     for (int i = 1; i <= len; i++) {
       scrambleList.add(i);

@@ -11,6 +11,56 @@
 
 # How to use Java Library
 
+* Methods
+  * moveTo(Location loc)
+  * glideTo(Location loc, double secs)
+  * setDirection(double dir)
+  * pointAt(Location loc)
+  * turnLeft(double deg)
+  * turnRight(double deg)
+  * moveForward(double dist)
+  * penUp()
+  * penDown()
+  * setPen(boolean isDown)
+  * setPenColor(Color color)
+  * setPenSize(double size)
+  * setImage(String path, double height, double width)
+  * wait(double secs)
+  * isTouching(Sprite other)
+  * getLocation()
+  * getDirection()
+  * getHBHeight()
+  * getHBWidth()
+  * isPenDown()
+  * getPenColor()
+  * getPenSize()
+  * getImage()
+* How to use the commands
+  1. First, initialize a Sprite using the command:
+
+```java
+Sprite spriteName = addSprite("spriteName");
+```
+
+  2. For each sprite, you need to initialize a thread
+  3. To do this, write:
+
+```java
+addThread(() -> {
+// put your commands in here
+});
+```
+
+  4. To call a command on a sprite, write:
+
+```java
+spriteName.method(inputs);
+```
+
+  5. Run your project from the command line
+
+# How to run projects
+
 1. Make a new file in the "exercises" folder, and name your file what you want to call the project
 2. Type the following lines into your file:
 

@@ -36,14 +36,14 @@
   * getPenSize()
   * getImage()
 * How to use the commands
-  1. First, initialize a Sprite using the command:
+  * First, initialize a Sprite using the command:
 
 ```java
 Sprite spriteName = addSprite("spriteName");
 ```
 
-  2. For each sprite, you need to initialize a thread
-  3. To do this, write:
+  * For each sprite, you need to initialize a thread
+  * To do this, write:
 
 ```java
 addThread(() -> {
@@ -51,13 +51,13 @@ addThread(() -> {
 });
 ```
 
-  4. To call a command on a sprite, write:
+  * To call a command on a sprite, write:
 
 ```java
 spriteName.method(inputs);
 ```
 
-  5. Run your project from the command line
+  * Run your project from the command line
 
 # How to run projects
 

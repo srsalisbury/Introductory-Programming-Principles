@@ -16,3 +16,4 @@ A class designed to teach the concepts behind programming, rather than focus on 
     * [Sort](https://srsalisbury.github.io/Introductory-Programming-Principles/docs/projects/p7_sort)
 * Code for custom library designed to emulate SNAP! 4.0 interface in Java
   * [Intructions for how to set it up & use it](https://srsalisbury.github.io/Introductory-Programming-Principles/docs/library_how_to)
+* Link to SNAP! 4.0 [here](https://snap.berkeley.edu/)

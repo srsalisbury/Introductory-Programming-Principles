@@ -1,13 +1,14 @@
 # How to Set Up Java Library
 
 1. Download and install Git on your computer from [here](https://git-scm.com/downloads)
-2. Download and install Gradle on your computer from [here](https://gradle.org/install/)
-3. Use Git to clone the contents of the "code" folder into your desired location on your computer
+2. Download and install Gradle 7.3 on your computer from [here](https://gradle.org/install/)
+3. Make sure you have Java 17.0.1 or better installed on your computer
+4. Use Git to clone the contents of the "code" folder into your desired location on your computer
    1. Decide where you want to put the code
    2. Create the directory and cd into it
    3. Run `git clone https://github.com/srsalisbury/Introductory-Programming-Principles.git`
-4. Run `cd Introductory-Programming-Principles/code`
-5. Run `gradle build`
+5. Run `cd Introductory-Programming-Principles/code`
+6. Run `gradle build`
 
 # How to start a project
 

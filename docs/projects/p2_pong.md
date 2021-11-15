@@ -28,5 +28,5 @@ In this assignment you will be coding up the video game Pong. Pong is one of the
    1. Make it simulate actual bouncing, exiting at the angle mirrored to its entry
    1. Can you make it universal to any sprite
    1. Create a Bounce that works on top and bottom of screen
-1. Make a CPU for one of the paddles
+1. Make a computer controller for one of the paddles
 1. Make a Custom Scoreboard that doesn’t use the built-in variable display (Showing Variable on screen)

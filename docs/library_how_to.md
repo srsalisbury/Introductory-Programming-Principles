@@ -30,7 +30,7 @@ public class NameOfClass extends SnapApp {
 }
 ```
 
-3. Write your desired code within the "start" function. You can add any more functions you want, just maks sure that they are outside of the start function
+3. Write your desired code within the "start" function. You can add any more functions you want, just make sure that they are outside of the start function
 
 # How to use Java Library
 

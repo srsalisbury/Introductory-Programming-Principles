@@ -55,3 +55,18 @@ task sort(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
   main = 'exercises.Sort'
 }
+
+task spriteDraw(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.SpriteDraw'
+}
+
+task spriteFollow(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.SpriteFollow'
+}
+
+task polygonDraw(type:JavaExec) {
+  classpath = sourceSets.main.runtimeClasspath
+  main = 'exercises.PolygonDraw'
+}

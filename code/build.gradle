@@ -26,11 +26,6 @@ javafx {
 	modules = [ 'javafx.controls' ]
 }
 
-task exercise(type:JavaExec) {
-  classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.Exercise'
-}
-
 task pong(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
   main = 'exercises.Pong'

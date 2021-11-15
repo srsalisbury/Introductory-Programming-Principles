@@ -10,10 +10,10 @@ public class Pong extends SnapApp {
   @Override
   public void start() {
     Sprite player1 =
-        addSprite("player1", "C:\\Users\\steve\\Desktop\\Desktop\\Pong_Bar.png", 40.0, 10.0);
+        addSprite("player1", "images/Pong_Bar.png", 40.0, 10.0);
     Sprite player2 =
-        addSprite("player2", "C:\\Users\\steve\\Desktop\\Desktop\\Pong_Bar.png", 40.0, 10.0);
-    Sprite ball = addSprite("ball", "C:\\Users\\steve\\Desktop\\Desktop\\Ball.png", 10.0, 10.0);
+        addSprite("player2", "images/Pong_Bar.png", 40.0, 10.0);
+    Sprite ball = addSprite("ball", "images/Ball.png", 10.0, 10.0);
     // int p1score = 0;
     // int p2score = 0;
     Sprite[] paddles = {player1, player2};

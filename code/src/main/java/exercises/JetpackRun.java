@@ -12,7 +12,7 @@ public class JetpackRun extends SnapApp {
   @Override
   public void start() {
     Sprite player =
-        addSprite("player", "C:\\Users\\steve\\Desktop\\Desktop\\JetpackPlayerOff.png", 60.0, 30.0);
+        addSprite("player", "images/JetpackPlayerOff.png", 60.0, 30.0);
     player.moveTo(-260, 0.0);
     addLoopThread(0.02, () -> playerControl(player, KeyCode.SPACE), "player");
     addThread(() -> wallControl(player));
@@ -21,10 +21,10 @@ public class JetpackRun extends SnapApp {
   public void playerControl(Sprite player, KeyCode upkey) {
     if (getInputs().isKeyPressed(upkey)) {
       v += 0.6;
-      player.setImage("C:\\Users\\steve\\Desktop\\Desktop\\JetpackPlayerOn.png", 60.0, 30.0);
+      player.setImage("images/JetpackPlayerOn.png", 60.0, 30.0);
     } else {
       v -= 0.6;
-      player.setImage("C:\\Users\\steve\\Desktop\\Desktop\\JetpackPlayerOff.png", 60.0, 30.0);
+      player.setImage("images/JetpackPlayerOff.png", 60.0, 30.0);
     }
     double targetY = player.getLocation().y() + v;
     if (targetY > 190.0) {
@@ -39,9 +39,9 @@ public class JetpackRun extends SnapApp {
 
   public boolean runWall(double gap, double height, double speed, Sprite jetpack) {
     Sprite topWall =
-        addSprite("topWall", "C:\\Users\\steve\\Desktop\\Desktop\\JetpackWall.png", 600.0, 60.0);
+        addSprite("topWall", "images/JetpackWall.png", 600.0, 60.0);
     Sprite bottomWall =
-        addSprite("bottomWall", "C:\\Users\\steve\\Desktop\\Desktop\\JetpackWall.png", 600.0, 60.0);
+        addSprite("bottomWall", "images/JetpackWall.png", 600.0, 60.0);
     topWall.moveTo(330.0, (height + ((gap + topWall.getHitBoxHeight()) / 2)));
     bottomWall.moveTo(330.0, (height - ((gap + bottomWall.getHitBoxHeight()) / 2)));
     while (true) {

@@ -11,7 +11,7 @@
 
 # How to use Java Library
 
-* Methods
+* Sprite Methods
   * moveTo(Location loc)
   * glideTo(Location loc, double secs)
   * setDirection(double dir)

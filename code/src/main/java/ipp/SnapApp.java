@@ -1,6 +1,5 @@
 package ipp;
 
-import java.io.FileNotFoundException;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;

@@ -10,7 +10,7 @@ import java.util.List;
 public class Sort extends SnapApp {
 
   private List<Integer> list = new ArrayList<Integer>();
-  private int size = 50;
+  private int size = 100;
   private Sprite drawer;
 
   @Override
@@ -22,11 +22,9 @@ public class Sort extends SnapApp {
     for (int i = 0; i < list.size(); i++) {
       drawBar(i, size, list.get(i));
     }
-    // addThread(() -> quicksort(0, size - 1));
-    addThread(
-        () -> {
-          heapsort();
-        });
+    addThread(() -> quicksort(0, size - 1));
+//    addThread(
+//            this::heapsort);
   }
 
   public List<Integer> generateScramble(int len) {

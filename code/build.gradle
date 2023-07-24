@@ -4,12 +4,13 @@ buildscript {
 
 plugins {
 	id 'java'
+    id 'application'
 	// id 'com.github.sherter.google-java-format' version '0.9'
 	id 'org.openjfx.javafxplugin' version '0.0.10'
 }
 
 repositories {
-	jcenter()
+	mavenCentral()
 }
 
 dependencies {
@@ -26,42 +27,46 @@ javafx {
 	modules = [ 'javafx.controls' ]
 }
 
+application {
+    mainClass = 'exercises.Sort'
+}
+
 task pong(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.Pong'
+  mainClass = 'exercises.Pong'
 }
 
 task breakout(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.Breakout'
+  mainClass = 'exercises.Breakout'
 }
 
 task jetpack(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.JetpackRun'
+  mainClass = 'exercises.JetpackRun'
 }
 
 task recursion(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.Recursion'
+  mainClass = 'exercises.Recursion'
 }
 
 task sort(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.Sort'
+  mainClass = 'exercises.Sort'
 }
 
 task spriteDraw(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.SpriteDraw'
+  mainClass = 'exercises.SpriteDraw'
 }
 
 task spriteFollow(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.SpriteFollow'
+  mainClass = 'exercises.SpriteFollow'
 }
 
 task polygonDraw(type:JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
-  main = 'exercises.PolygonDraw'
+  mainClass = 'exercises.PolygonDraw'
 }
